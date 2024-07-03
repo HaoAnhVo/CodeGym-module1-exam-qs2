@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cau2</title>
+    </head>
+    <body>
+        <script>
+            function countUpperCase(str) {
+                let countUpperCase = 0;
+
+                for (let i = 0; i < str.length; i++) {
+                    let char = str[i];
+
+                    if (char === char.toUpperCase() && typeof char === "string") {
+                        countUpperCase++;
+                    }
+                }
+                if (countUpperCase === 0) {
+                    return `The Strings is not contain upper char`;
+                } else {
+                    return countUpperCase;
+                }
+            }
+
+            console.log(countUpperCase("123"));
+        </script>
+    </body>
+</html>
